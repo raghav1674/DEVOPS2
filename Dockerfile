@@ -20,4 +20,18 @@ CMD java -jar /usr/lib/jenkins/jenkins.war
 EXPOSE 8080
 
 
+#IN THE DIRECTORY WHERE YOU HAVE COPIED THIS THE mail.rc and  check_forext.py should be there 
+# TO BUILD THIS IMAGE USE THE COMMAND :
+
+#docker build -t imagename:version  folder where the Dockerfile u have copied.
+
+#and for running the conatiner from this image use command:
+
+#docker run -it -P --name containername imagename:version
+
+#U CAN ACCESS THE JENKINS FROM 
+#base os using BASEDOCKERHOSTIP:PORT MAPPED .
+#u can see the port number to which 8080 port of the container is mapped using netstat -tnlp 
+
+
 
