@@ -1,0 +1,23 @@
+# Job1 : Pull  the Github repo automatically when some developers push repo to Github.
+
+
+
+#POST-COMMIT HOOK 
+
+#!/bin/bash
+
+git push
+
+
+
+
+
+#JENKINS  JOB 1 SCRIPT:
+
+rm -rvf /storage/
+mkdir /storage/
+cp -rvf * /storage/
+
+python3 /workdir/check_forext.py
+
+
