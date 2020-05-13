@@ -20,8 +20,21 @@ CMD java -jar /usr/lib/jenkins/jenkins.war
 EXPOSE 8080
 
 
-#IN THE DIRECTORY WHERE YOU HAVE COPIED THIS THE mail.rc and  check_forext.py should be there 
-# TO BUILD THIS IMAGE USE THE COMMAND :
+#FROM is used for the image to be used
+
+#RUN is used for executing command while building the new image, so that features will be pre installed
+
+#CMD  is used to run a=command at the run time not at the build time and only one CMD should be there in one Dockerfile
+
+#Expose is used to expose the docker port as docker is isolated we have to enable Port Address Translation 
+#and is also used to inform  that which port is exposed to the other techonolgies or tools or commands.
+
+#COPY is used to copy the file from the base os to image at build time.
+
+
+#IN THE DIRECTORY WHERE YOU HAVE COPIED this,  THE mail.rc and  check_forext.py should be copied there only as per my defined Dockerfile
+
+# TO BUILD THE IMAGE USE THE COMMAND :
 
 #docker build -t imagename:version  folder where the Dockerfile u have copied.
 
