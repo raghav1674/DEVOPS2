@@ -11,6 +11,9 @@ git push
 
 
 
+#FIRST OF ALL NEED TO CONFIGURE JENKINS ie Putting the initial password ,
+#install Github , BUILD PIPELINE, DELIVERY PIPELINE And GIT PULL REQUEST BUILDER plugins
+#One should have some knowledge of JENKINS , GITHUB AND GIT.
 
 #JENKINS  JOB 1 SCRIPT:
 
