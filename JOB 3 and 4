@@ -1,8 +1,11 @@
-#I HAD COMBINED BOTH THE JOBS 
+#I HAD COMBINED BOTH THE JOBS and Also AFTER testing the Deployment is done if no issues.
 
-Job3 : Test your app if it  is working or not.
-Job4 : if app is not working , then send email to developer with error messages.
+#Job3 : Test your app if it  is working or not.
+#Job4 : if app is not working , then send email to developer with error messages.
 
+
+#test_php and test_html are testing env.
+#prod_php and prod_html are production env.
 
 
 #I used mailx to send the mail i have done all the configurations in jenkins server regarding the mailx.
