@@ -27,7 +27,7 @@ fi
 isempty_html=1
 fi
 
-if [[ $(ssh root@IP ls -A /phptest_storage) ]]      # to check for if directory is empty or not 
+if [[ $(ssh root@IP ls -A /phptest_storage) ]]  
 then
 if ssh root@IP docker ps | grep test_php
 then
